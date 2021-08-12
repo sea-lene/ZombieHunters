@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Home.css">
+
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+$(".win").hide();
+var bool=0;
+
+life_line=function life_line()
+{
+if(bool==0)
+{
+	$("#H1").fadeOut("slow");
+	bool=1;
+}
+else if(bool==1)
+{
+$("#H2").fadeOut("slow");
+bool=2;
+}
+else if(bool==2)
+{
+$("#H3").fadeOut("slow");
+bool=3;
+$(".lifeline").fadeOut("slow");
+$(".z7").stop().hide();
+$(".z8").stop().hide();
+$(".z9").stop().hide();
+$(".z10").stop().hide();
+$(".z2_1").stop().hide();
+$(".z2_2").stop().hide();
+$(".z2_3").stop().hide();
+$(".z2_4").stop().hide();
+$(".z2_5").stop().hide();
+$(".over").show();
+$(".over").animate({"top":'25%'},1500);
+
+}
+
+}
+
+
+$(".over").hide();
+$(".lifeline").hide();
+animate_loop= function animate_loop(){
+	
+			$(".name").animate({"font-size":'140px'},1500,function(){
+			
+			$(".name").animate({"font-size":'150px'},1500);
+			animate_loop();
+			});
+	}
+	
+	animate_loop();
+
+
+//----------------Hiding--------------------------------------------------------
+$(".z1").hide();
+$(".z2").hide();
+$(".z3").hide();
+$(".z4").hide();
+$(".z5").hide();
+$(".z6").hide();
+$(".z7").hide();
+$(".z8").hide();
+$(".z9").hide();
+$(".z10").hide();
+$(".z2_1").hide();
+$(".z2_2").hide();
+$(".z2_3").hide();
+$(".z2_4").hide();
+$(".z2_5").hide();
+//---------------------------------------------------------------------------------
+
+
+//-----------Play Button Click
+$(".play").click(function(){
+$(".home_bg").css({"filter":"blur(0)"});
+$(".lifeline").show();
+$(".play").hide();
+$(".name").hide();
+$(".z1").show();
+$(".z1").animate({"top":'90%'},4000,function(){$("#H1").fadeOut(1000);bool=1;});
+$(".z1").fadeOut("slow");
+
+$(".z2").delay(2000).fadeIn().animate({"top":'90%'},4000,function(){
+
+if(bool==1)
+{
+$("#H2").fadeOut(1000);
+bool=2;
+}
+else
+{
+	$("#H1").fadeOut(1000);
+	bool=1;
+}
+
+});
+$(".z2").fadeOut("slow");
+
+$(".z3").delay(3800).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z3").fadeOut("slow");
+
+$(".z4").delay(4800).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z4").fadeOut("slow");
+
+$(".z5").delay(5800).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z5").fadeOut("slow");
+
+$(".z6").delay(6800).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z6").fadeOut("slow");
+
+var check1=0;
+var check2=0;
+var check3=0;
+
+
+$(".z7").delay(7800).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z7").fadeOut("slow");
+$(".z8").delay(8800).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z8").fadeOut("slow");
+$(".z9").delay(9800).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z9").fadeOut("slow");
+$(".z10").delay(10800).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z10").fadeOut("slow");
+$(".z2_1").delay(12000).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z2_1").fadeOut("slow");
+$(".z2_2").delay(13000).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z2_2").fadeOut("slow");
+$(".z2_3").delay(14000).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z2_3").fadeOut("slow");
+$(".z2_4").delay(15000).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z2_4").fadeOut("slow");
+$(".z2_5").delay(16000).fadeIn().animate({"top":'90%'},4000,function(){life_line();});
+$(".z2_5").fadeOut("slow");
+
+
+});
+//--------------------------------------------------------------------------------
+
+
+//-----------------Zombies Click-------------------------------------------------
+
+$(".z1").click(function(){
+$(".z1").stop();
+$(".z1").attr("src","After.png");
+$(".z1").delay(2000).fadeOut(300);
+});
+
+$(".z2").click(function(){
+check1=1;
+$(".z2").stop();
+$(".z2").attr("src","After.png");
+$(".z2").delay(2000).fadeOut(300);
+});
+
+$(".z3").click(function(){
+$(".z3").stop();
+$(".z3").attr("src","After.png");
+$(".z3").delay(2000).fadeOut(300);
+});
+
+$(".z4").click(function(){
+check2=1;
+$(".z4").stop();
+$(".z4").attr("src","After.png");
+$(".z4").delay(2000).fadeOut(300);
+});
+
+$(".z5").click(function(){
+$(".z5").stop();
+$(".z5").attr("src","After.png");
+$(".z5").delay(2000).fadeOut(300);
+});
+
+$(".z6").click(function(){
+check3=1;
+$(".z6").stop();
+$(".z6").attr("src","After.png");
+$(".z6").delay(2000).fadeOut(300);
+});
+
+$(".z7").click(function(){
+$(".z7").stop();
+$(".z7").attr("src","After.png");
+$(".z7").delay(2000).fadeOut(300);
+});
+
+$(".z8").click(function(){
+$(".z8").stop();
+$(".z8").attr("src","After.png");
+$(".z8").delay(2000).fadeOut(300);
+});
+
+$(".z9").click(function(){
+$(".z9").stop();
+$(".z9").attr("src","After.png");
+$(".z9").delay(2000).fadeOut(300);
+});
+
+$(".z10").click(function(){
+$(".z10").stop();
+$(".z10").attr("src","After.png");
+$(".z10").delay(2000).fadeOut(300);
+});
+
+$(".z2_1").click(function(){
+$(".z2_1").stop();
+$(".z2_1").attr("src","After.png");
+$(".z2_1").delay(2000).fadeOut(300);
+});
+
+$(".z2_2").click(function(){
+$(".z2_2").stop();
+$(".z2_2").attr("src","After.png");
+$(".z2_2").delay(2000).fadeOut(300);
+});
+
+$(".z2_3").click(function(){
+$(".z2_3").stop();
+$(".z2_3").attr("src","After.png");
+$(".z2_3").delay(2000).fadeOut(300);
+});
+
+$(".z2_4").click(function(){
+$(".z2_4").stop();
+$(".z2_4").attr("src","After.png");
+$(".z2_4").delay(2000).fadeOut(300);
+});
+
+$(".z2_5").click(function(){
+$(".z2_5").stop();
+$(".z2_5").attr("src","After.png");
+$(".z2_5").delay(2000).fadeOut(300);
+//--------------------if win---------------------------
+$(".win").show();
+$(".win").animate({"top":'25%'},1500);
+//------------------------------------------------------
+
+});
+//--------------------------------------------------------------------------------
+});
+</script>
+</head>
+<body>
+<audio id="Kill" src="KillZ.mp3"></audio>
+<audio id="bgm" src="BGM.mp3"></audio>
+<div class="home_bg"></div>
+
+
+<img src="Before.png" class="z1" onClick="playm()">
+<img src="Before.png" class="z2" onClick="playm()">
+<img src="Before.png" class="z3" onClick="playm()">
+<img src="Before.png" class="z4" onClick="playm()">
+<img src="Before.png" class="z5" onClick="playm()">
+<img src="Before.png" class="z6" onClick="playm()">
+<img src="Before.png" class="z7" onClick="playm()">
+<img src="Before.png" class="z8" onClick="playm()">
+<img src="Before.png" class="z9" onClick="playm()">
+<img src="Before.png" class="z10" onClick="playm()">
+
+<button class="play" onClick="PlayM()"><b>Play</b></button>
+<p class="name"><b>ZombieHunters</b></p>
+<img src="Before.png" class="z2_1" onClick="playm()">
+<img src="Before.png" class="z2_2" onClick="playm()">
+<img src="Before.png" class="z2_3" onClick="playm()">
+<img src="Before.png" class="z2_4" onClick="playm()">
+<img src="Before.png" class="z2_5" onClick="playm()">
+
+<div class="lifeline">
+<span>Life Line</span>
+<img class="himg" id="H1" src="heart.jpg">
+<img class="himg" id="H2" src="heart.jpg">
+<img class="himg" id="H3" src="heart.jpg">
+
+</div>
+<span class="over">Game Over!</span>
+<span class="win"><b>You win!!<b></span>
+
+</body>
+
+<script>
+var x=document.getElementById("bgm");
+var y=document.getElementById("Kill");
+function PlayM()
+{
+
+x.play();
+}
+function playm()
+{
+
+y.play();
+}
+
+</script>
+
+</html>
