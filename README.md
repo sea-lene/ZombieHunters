@@ -1,2 +1,2 @@
 # ZombieHunters
-Simple Game created using HTML, CSS, JQuery and JS. 
+Simple Game created using HTML, CSS, JQuery and JS.
