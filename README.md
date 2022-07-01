@@ -1,6 +1,8 @@
 # ZombieHunters
 Request: I request you to please ignore the folder structure of this project. It was my learning phase when I created this mini project. As it is not responsive, Please view and play this game in laptop/PC. Hope you would enjoy playing!!
 
+Play on : https://suhaneemavar.github.io/ZombieHunters/
+
 Description:
 Simple Game created using HTML, CSS, JQuery and JS. 
 
