@@ -1,10 +1,11 @@
 # ZombieHunters
-Request: I request you to please ignore the folder structure of this project. It was my learning phase when I created this mini project. As it is not responsive, Please view and play this game in laptop/PC. Hope you would enjoy playing!!
+This was my first year project after learning HTML, CSS, JS and Jquery.Bootstrap is not used so I request you to play this game in Laptop
 
-Play on : https://suhaneemavar.github.io/ZombieHunters/
+## Demo
+https://suhaneemavar.github.io/ZombieHunters/
 
-Description:
-Simple Game created using HTML, CSS, JQuery and JS. 
-
-How to play?
+## How to play?
 As the name suggests, the player has to kill zombies. If maximum 3 zombies will be missed , the game will be over. If the player kills all zombies than player wins.
+
+<img src="https://github.com/SuhaneeMavar/ZombieHunters/blob/main/image1.png">
+<img src="https://github.com/SuhaneeMavar/ZombieHunters/blob/main/image2.png">
